@@ -1,6 +1,8 @@
+clear all:
 clc;
-n = 0:6;
-x = [5,8,9,2,6,8,7];
+
+n = -15:15;
+x = sin(0.1.*pi.*n);
 
 if(esPar(n,x))
     disp('LA FUNCION ES PAR');
@@ -15,7 +17,6 @@ else
     nexttile;
     stem(n,x);
     title('Funcion original');
-
 
     nexttile;
     [n1,x1] = partePar(n,x);
